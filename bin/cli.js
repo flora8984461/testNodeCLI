@@ -23,7 +23,7 @@ case 'add':
     break;
 
 case 'remove':
-    var index = dataContent.indexOf(myArgs3)
+    var index = dataContent.indexOf(dataContent.find(ele => ele[myArgs2] === myArgs3))
     if(index != -1){
         dataContent.splice( dataContent.indexOf(myArgs3), 1 );
         console.log(dataContent)
