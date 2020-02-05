@@ -23,7 +23,7 @@ case 'add':
     break;
 
 case 'remove':
-    var index = dataContent.indexOf(dataContent.find(ele => ele[myArgs2] === myArgs3))
+    var index = dataContent.indexOf(dataContent.find(ele => ele.hasOwnProperty(myArgs2)))
     if(index != -1){
         dataContent.splice( dataContent.indexOf(myArgs3), 1 );
         console.log(dataContent)
@@ -39,7 +39,7 @@ case 'get':
       console.log(dataContent)
     }else{
       var getKey = myArgs2;
-      console.log(dataContent.find(element => element[getKey])) 
+      console.log(dataContent.filter(element => element[getKey]))
     }
     break;
 
