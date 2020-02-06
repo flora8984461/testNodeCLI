@@ -1,8 +1,8 @@
-//test
 const CliTest = require('command-line-test');
 const assert = require('assert');
 
-describe('test', function() {
+//test by order
+describe('test by order', function() {
     it('exec method should be ok with callback', function(done) {
       const cliTest1 = new CliTest();
       cliTest1.exec('ksv get', function(err, res) {
